@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # spec/caesar_spec.rb
-require '../lib/caesar_cipher'
+require_relative '../lib/caesar_cipher'
 
 describe CaesarCipher do
   subject { CaesarCipher.new }
@@ -36,7 +36,7 @@ describe CaesarCipher do
     end
 
     it 'works with both capital and lowercase letters' do
-      # expect(subject.translate('YOYOYO')
+      expect(subject.translate('YoYoYo', 5)).to eql('DtDtDt')
     end
   end
 end

@@ -16,3 +16,7 @@ class CaesarCipher
     result
   end
 end
+
+test = CaesarCipher.new
+
+puts test.translate('YoYoYo', 5)
